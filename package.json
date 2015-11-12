@@ -1,0 +1,25 @@
+{
+  "name": "postcss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.0.3",
+    "browser-sync": "^2.9.6",
+    "gulp": "^3.9.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-postcss": "^6.0.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "itself": "^0.1.0",
+    "postcss-import": "^7.0.0",
+    "postcss-nested": "^1.0.0",
+    "postcss-simple-vars": "^1.0.1",
+    "require-dir": "^0.3.0"
+  }
+}
