@@ -3,16 +3,16 @@ var gulp = require('gulp'),
   autoprefixer = require('autoprefixer'),
   sourcemaps   = require('gulp-sourcemaps'),
   plumber = require('gulp-plumber'),
-  atImport = require("postcss-import"),
+  atImport = require('postcss-import'),
   vars   = require('postcss-simple-vars'),
   nested   = require('postcss-nested'),
   browserSync = require('browser-sync');
 
 processors = [
-  autoprefixer({ browsers: ['last 2 versions'] }),
   atImport,
   vars,
-  nested
+  nested,
+  autoprefixer({ browsers: ['last 2 versions'] })
 ];
 
 gulp.task('postcss', function () {
