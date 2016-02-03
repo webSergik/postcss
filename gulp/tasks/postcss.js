@@ -16,11 +16,11 @@ processors = [
 ];
 
 gulp.task('postcss', function () {
-  gulp.src('app/css/*.css')
-  .pipe(plumber())
-  .pipe(sourcemaps.init())
-  .pipe(postcss(processors))
-  .pipe(sourcemaps.write('.'))
-  .pipe(gulp.dest('public/css'))
-  .pipe(browserSync.reload({stream: true}));
+  return gulp.src('app/css/*.css')
+    .pipe(plumber())
+    .pipe(sourcemaps.init())
+    .pipe(postcss(processors))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('public/css'))
+    .pipe(browserSync.reload({stream: true}));
 });

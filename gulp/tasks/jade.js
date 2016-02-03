@@ -4,11 +4,11 @@ var gulp = require('gulp'),
   browserSync = require('browser-sync');
 
 gulp.task('jade', function() {
-  gulp.src('app/pages/**/*.jade')
-  .pipe(plumber())
-  .pipe(jade({
-    pretty: true
-  }))
-  .pipe(gulp.dest('public'))
-  .pipe(browserSync.reload({stream: true}));
+  return gulp.src('app/pages/**/*.jade')
+    .pipe(plumber())
+    .pipe(jade({
+      pretty: true
+    }))
+    .pipe(gulp.dest('public'))
+    .pipe(browserSync.reload({stream: true}));
 });
