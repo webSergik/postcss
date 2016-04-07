@@ -9,10 +9,10 @@ var gulp = require('gulp'),
   browserSync = require('browser-sync');
 
 processors = [
+  autoprefixer({ browsers: ['last 2 versions'] }),
   atImport,
   vars,
-  nested,
-  autoprefixer({ browsers: ['last 2 versions'] })
+  nested
 ];
 
 gulp.task('postcss', function () {
