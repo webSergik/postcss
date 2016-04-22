@@ -6,13 +6,15 @@ var gulp = require('gulp'),
   atImport = require('postcss-import'),
   vars   = require('postcss-simple-vars'),
   nested   = require('postcss-nested'),
+  lost = require('lost'),
   browserSync = require('browser-sync');
 
 processors = [
   autoprefixer({ browsers: ['last 2 versions'] }),
   atImport,
   vars,
-  nested
+  nested,
+  lost
 ];
 
 gulp.task('postcss', function () {
