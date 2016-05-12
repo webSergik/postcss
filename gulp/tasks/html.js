@@ -1,8 +1,8 @@
-var gulp = require('gulp'),
-    browserSync = require('browser-sync');
+import gulp from 'gulp';
+import browserSync from 'browser-sync';
 
-gulp.task('html', function() {
-  return gulp.src('app/*.html')
+gulp.task('html', () => {
+  gulp.src('app/*.html')
     .pipe(gulp.dest('public'))
     .pipe(browserSync.reload({stream: true}));
 });

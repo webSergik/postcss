@@ -1,8 +1,10 @@
-var gulp = require('gulp'),
-  browserSync = require('browser-sync');
+import gulp from 'gulp';
+import babel from 'gulp-babel';
+import browserSync from 'browser-sync';
 
-gulp.task('javascript', function() {
-  return gulp.src('app/js/**/*.js')
+gulp.task('javascript', () => {
+  gulp.src('app/js/**/*.js')
+    .pipe(babel())
     .pipe(gulp.dest('public/js'))
-    .pipe(browserSync.reload({stream: true}));
+    .pipe(browserSync.reload({ stream: true }));
 });

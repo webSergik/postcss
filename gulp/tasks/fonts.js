@@ -1,6 +1,6 @@
-var gulp = require('gulp');
+import gulp from 'gulp';
 
-gulp.task('fonts', function () {
-    return gulp.src('app/fonts/**/*')
-        .pipe(gulp.dest('public/fonts'));
+gulp.task('fonts', () => {
+  gulp.src('app/fonts/**/*')
+    .pipe(gulp.dest('public/fonts'));
 });
