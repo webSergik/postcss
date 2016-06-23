@@ -2,13 +2,11 @@ extends ../blocks/layout/layout
 block append head
   +styles('css/styles.css')
 block title
-  title My title
+  title FCC
 block content
   .main
-    .col
-      h1 PostCss Template !!!
-    .col
-      h1 PostCss Template !!!
-    .col
-      h1 PostCss Template !!!
-  script(src="js/app.js")
+    .quote
+    .buttons_wrapper
+      button.button.button--quote Next Quote
+      a.button.button--tweet(href="https://twitter.com/intent/tweet?button_hashtag=famous_quote" data-related="sz47181" target="_blank") Tweet
+  script(src="js/quote.js")

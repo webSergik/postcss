@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Kalam);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  background: url('../img/grass.jpg') repeat;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+}
+
+.quote {
+  display: flex;
+  width: 600px;
+  padding: 20px;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 6px 6px 13px 1px rgba(0, 0, 0, 0.75);
+  border-radius: 7px;
+  transition: all 0.3s;
+  blockquote {
+    font-family: Kalam;
+    font-size: 30px;
+  }
+  span {
+    font-family: 'Open Sans';
+    font-size: 22px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+  }
+}
+
+.buttons_wrapper {
+  margin-top: 30px;
+}
+
+.button {
+  margin: 0 10px;
+  padding: 0;
+  border: none;
+  background: #47a947;
+  box-shadow: 6px 6px 13px 1px rgba(0, 0, 0, 0.75);
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 7px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+  &:hover {
+    background: #358035;
+  }
+}
+
+.button--tweet {
+  background: #1b95e0;
+  &:hover {
+    background: #0c7abf;
+  }
+}

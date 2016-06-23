@@ -6,4 +6,5 @@ gulp.task('watch', () => {
   gulp.watch('app/js/**/*.js', ['javascript']);
   gulp.watch('app/img/**/*.*', ['images']);
   gulp.watch('app/fonts/**/*.*', ['fonts']);
+  gulp.watch('app/data/**/*.*', ['json']);
 });
